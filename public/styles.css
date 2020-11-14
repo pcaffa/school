@@ -1,0 +1,265 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;1,700&display=swap');
+
+:root{
+    --primary-color:  #530101;
+    --primary-color-light:  rgb(126, 38, 38);
+}
+* {
+    margin:0;
+    padding:0;
+    border:0;
+}
+body {
+    background: var(--primary-color);
+    font-family: 'Roboto', sans-serif;
+}
+header {
+    background-color: white;
+    width: 100%;
+    padding: 32px;
+    text-align: center;
+    box-sizing: border-box;
+}
+.links {
+    font-size: 20px;
+}
+.links a + a {
+    margin-left: 32px;
+}
+.links a {
+    text-decoration: none;
+    color: #777;
+    position: relative;
+}
+.links a.active {
+    font-weight: bold;
+    color:  var(--primary-color);
+}
+.links a:hover {
+    color:  var(--primary-color);
+}
+
+.links a::after {
+    content: "";
+    width: 0;
+    height: 2px;
+    background-color: var(--primary-color);
+    position: absolute;
+    left: 0;
+    bottom: -4px;
+}
+
+.links a:hover::after {
+    width: 100%;
+    transition: width 200ms ease-in-out;
+}
+
+.card {
+    background-color: white;
+    width: 800px;
+    min-height: 400px;
+
+    margin: 50px auto;
+    border-radius: 0.6%;
+
+    display: grid;
+    grid-template-columns: 40% 60%;
+
+    box-shadow: 5px 5px 6px 1px rgba(0,0,0,0.3);
+
+    animation: up 200ms ease;
+}
+
+@keyframes up {
+    from{
+        opacity: 0;
+        transform: translateX(50px);
+    }
+    to{
+        opacity: 1;
+    }
+}
+
+.card .avatar{
+    border-radius: 0.6%;
+}
+
+.details {
+    padding: 30px;
+}
+
+.details .item {
+    border-bottom: 1px solid rgba(0,0,0,0.2);
+    padding: 16px 0;
+}
+
+.details .item:first-child {
+    border-top:5px;
+}
+
+.details .item div:nth-child(1) {
+    font-size:15px;
+    color: rgba(95, 1, 1, 0.548);
+}
+
+.details .item:last-child {
+    font-weight: bold;
+}
+
+.details .item:last-child div:nth-child(1) {
+    color: rgba(95, 1, 1, 0.726);
+}
+
+.details h3 {
+    text-align: center;
+    color: var(--primary-color);
+    text-transform: uppercase;
+}
+
+.details .item span {
+    padding: 8px 16px;
+    background-color: var(--primary-color-light);
+    border-radius: 16px;
+    color: white;
+
+    margin-right: 4px;
+    margin-top: 8px;
+    display: inline-block;
+
+    text-transform: uppercase;
+    font-size: 12px;
+}
+
+/*FORM*/
+
+input, select {
+    width: 100%;
+    outline: none;
+    color: rgb(126, 123, 123);
+    font-weight: bold;
+    font-size: 17px;
+}
+
+input[type="radio"] {
+    width: initial;
+    margin: 3px;
+}
+
+input:placeholder {
+    font-size:15px;
+    font-weight: normal;
+    color: yellow;
+}
+
+button[type="submit"], a.button {
+    background-color: var(--primary-color);
+    color:white;
+    font-size: 15px;
+    padding: 5px;
+    width: 100%;
+    border-radius: 5px;
+    margin-top: 20px;
+    outline: none;
+}
+
+a.button {
+    display: block;
+    box-sizing: border-box;
+    text-align: center;
+    text-decoration: none;
+}
+
+button[type="submit"]:hover, a.button:hover{
+    cursor: pointer;
+    background-color: rgba(95, 1, 1, 0.9);    
+}
+
+.buttons {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 20px;
+    transition: width 2000ms ease-in-out;
+}
+
+#btn-edit  { 
+    background-color: rgba(1, 95, 9, 0.9); 
+}
+
+#btn-edit:hover {
+    background-color: rgba(85, 153, 91, 0.9); 
+}
+
+.table-container {
+    display: block;
+    padding: 40px;
+    box-sizing: border-box;
+}
+
+.table-container thead tr th {
+    text-align: left;
+}
+
+td,th {
+    padding: 16px;
+    border-bottom: 1px solid #d9d9d9;
+}
+
+th {
+    text-transform: uppercase;
+    color: var(--primary-color);
+    font-size: 14px;
+    font-weight: bold;
+}
+
+tbody tr:last-child td {
+    border-bottom: none;
+}
+
+tbody tr td:first-child {
+    display:grid;
+    grid-template-columns: 64px 1fr;
+    align-items: center;
+}
+
+tbody tr td:first-child span {
+    width: 48px;
+    height: 48px;
+    background-position: center;
+    background-size: cover;
+    border-radius: 50%;
+    box-shadow: 3px 1px 6px -4px black;
+    border: 2px solid white;
+}
+
+.table-container thead tr th:last-child, td:last-child {
+    text-align: center;
+}
+
+.table-container > a {
+    background-color: var(--primary-color);
+    padding: 8px 16px;
+    text-decoration: none;
+    color: white;
+    font-size: 12px;
+    border-radius: 4px;
+    margin-bottom: 17px;
+    display: inline-block;
+}
+
+.table-container > a:hover{
+    background-color: var(--primary-color-light);
+}
+
+tbody tr td .services {
+    padding: 8px;
+    background-color: var(--primary-color-light);
+    border-radius: 16px;
+    margin-right: 4px;
+    margin-top: 8px;
+    display: inline-block;
+    text-transform: uppercase;
+    font-size: 12px;
+
+    color:white;
+    font-size: 13px;
+}

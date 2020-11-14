@@ -1,0 +1,34 @@
+{
+  "teachers": [
+    {
+      "id": 1,
+      "avatar": "https://images.unsplash.com/photo-1551731409-43eb3e517a1a?crop=entropy&cs=tinysrgb&fit=crop&fm=jpg&h=500&ixid=eyJhcHBfaWQiOjF9&ixlib=rb-1.2.1&q=80&w=500",
+      "name": "Pamela Caffa",
+      "birth": 844300800000,
+      "schooling": "EM",
+      "classType": "distancia",
+      "services": "Inglês,Português,Japones",
+      "created_at": 1604552000106
+    }
+  ],
+  "students": [
+    {
+      "avatar": "https://images.unsplash.com/photo-1551731409-43eb3e517a1a?crop=entropy&cs=tinysrgb&fit=crop&fm=jpg&h=500&ixid=eyJhcHBfaWQiOjF9&ixlib=rb-1.2.1&q=80&w=500",
+      "name": " Pamela Souza Caffa",
+      "email": "caffa@gmail.com",
+      "birth": 471052800000,
+      "schoolYear": "9EF",
+      "weeklySchedule": "80",
+      "id": 1
+    },
+    {
+      "avatar": "https://images.unsplash.com/photo-1503676382389-4809596d5290?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1055&q=80",
+      "name": "Carla Almeida",
+      "email": "carla@teste",
+      "birth": 1134345600000,
+      "schoolYear": "6EF",
+      "weeklySchedule": "40",
+      "id": 2
+    }
+  ]
+}
